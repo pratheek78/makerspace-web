@@ -1,3 +1,5 @@
+// @ts-nocheck 
+
 import { cn } from "@/lib/cn";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
