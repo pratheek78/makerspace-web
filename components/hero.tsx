@@ -12,7 +12,7 @@ const Adj = ['Tinker', 'Build', 'Play']
 const Hero = () => {
 
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36" id="about">
       <div>
         <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white"/>
         <Spotlight className="top-10 left-full h-[80vh] h-[50vw]" fill="purple"/>
@@ -48,7 +48,7 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="MakerSpace CFAL" className="text-center text-[40px] md:text-5xl lg:text-6xl"/>
+            words="MakerSpace CFAL" className="text-center text-[40px] md:text-5xl lg:text-7xl"/>
             
           
 
