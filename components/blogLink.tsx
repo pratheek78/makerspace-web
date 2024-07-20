@@ -1,8 +1,12 @@
+"use client";
 import React from 'react'
-import { projects } from '@/data'
-import { PinContainer } from './ui/3d-pin'
+import { CardItem, CardBody, CardContainer } from './ui/3d-card';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Meteors } from './ui/meteors';
 
-const BlogLink = () => {
+
+export function BlogLink() {
   return (
     <div className="py-20">
         <h1 className="heading">
@@ -10,49 +14,61 @@ const BlogLink = () => {
             <span className='text-purple'>Blog Site!</span>
         </h1>
 
-        <div className="h-[40rem] w-full flex items-center justify-center ">
-            <PinContainer
-                title="Visit our Blog Site!"
-                href="https://makeatcfalblog.free.nf/"
-            >
-                    <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-                        <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-                            The CFAL Makerspace Blog
-                        </h3>
-                        <div className="text-base !m-0 !p-0 font-normal">
-                            <span className="text-slate-500 ">
-                            Add this description later
-                            </span>
-                        </div>
-                    <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
-                </div>
-            </PinContainer>
+    <CardContainer className="inter-var overflow-hidden">
+      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+        <CardItem
+          translateZ="50"
+          className="text-xl font-bold text-neutral-600 dark:text-white"
+        >  
+          The CFAL Makers Blog
+          <Meteors number={20} />
+        </CardItem>
+        <CardItem
+          as="p"
+          translateZ="60"
+          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+        >
+          Visit our blog site using the button below
+        </CardItem>
+        <CardItem translateZ="100" className="w-full mt-4">
+          <Image
+            src="/grad.jpg"
+            height="1000"
+            width="1000"
+            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt="thumbnail"
+          />
+          
+        </CardItem>
+        <div className="flex justify-between items-center mt-20">
+          <CardItem
+            translateZ={20}
+            as={Link}
+            href="https://youtube.com"
+            target="__blank"
+            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+          >
+            Click Here to Visit
+          </CardItem>
+          
+          
         </div>
+      </CardBody>
+      
+    </CardContainer>
         
         
-    </div>
+     </div>
     
   )
 }
 
-export default BlogLink
 
 
 
 
-{/* <div className='flex flex-wrap items-center
-        justify-center p-4 gap-16 mt-10'>
+// Important do not delete:
+// <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
 
-            {projects.map(({id, title, des, img, iconLists, link}) => (
-                <div key={id} className='lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]'>
-                    <PinContainer title={title} href={link} >
-                        <div>
-                            <div>
-                                <img src=""/>
-                            </div>
-                        </div>
-                    </PinContainer>
-                </div>
-            ))}
 
-        </div> */}
+

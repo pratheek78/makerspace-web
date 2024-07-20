@@ -2,7 +2,7 @@ import Hero from "@/components/hero"
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import {FaHome} from 'react-icons/fa';
 import { BentoGridSecondDemo } from "@/components/grid";
-import BlogLink from "@/components/blogLink";
+import {BlogLink} from "@/components/blogLink";
 
 export default function Home() {
   return (
