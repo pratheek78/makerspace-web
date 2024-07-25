@@ -3,6 +3,7 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { BentoGridSecondDemo } from "@/components/grid";
 import {BlogLink} from "@/components/blogLink";
 import { navItems } from "@/data";
+import Approach from "@/components/Approach";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         />
         <BentoGridSecondDemo />
         <BlogLink />
+        <Approach />
 
 
       </div>
