@@ -12,14 +12,14 @@ export const navItems = [
   export const socialMedia = [
     {
       id: 1,
-      img: "/git.svg",
+      img: "/github-mark.svg",
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "/youtube.svg",
     },
-    {
-      id: 3,
-      img: "/link.svg",
-    },
+    // {
+    //   id: 3,
+    //   img: "/insta.svg",
+    // },
   ];

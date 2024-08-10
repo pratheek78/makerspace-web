@@ -12,7 +12,8 @@ const Approach = () => {
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8">
 
-        <Card title="Planning and Strategy" icon={<AceternityIcon order='Phase 1' />} 
+        <Card title="Planning and Strategy" 
+              icon={<AceternityIcon order='Phase 1' />} 
               description="Add your description here(should be a paragraph)" >
           <CanvasRevealEffect
             animationSpeed={5.1}

@@ -4,6 +4,7 @@ import { BentoGridSecondDemo } from "@/components/grid";
 import {BlogLink} from "@/components/blogLink";
 import { navItems } from "@/data";
 import Approach from "@/components/Approach";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
         <BentoGridSecondDemo />
         <BlogLink />
         <Approach />
+        <Footer />
+        
 
 
       </div>
