@@ -18,8 +18,8 @@ export const navItems = [
       id: 2,
       img: "/youtube.svg",
     },
-    // {
-    //   id: 3,
-    //   img: "/insta.svg",
-    // },
+    {
+      id: 3,
+      img: "/insta.svg",
+    },
   ];
