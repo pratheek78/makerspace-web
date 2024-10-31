@@ -4,6 +4,7 @@ export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Blog", link: "#blog" },
+    { name: "Gallery", link: "/gallery"}
   ];
   
  
@@ -21,5 +22,6 @@ export const navItems = [
     {
       id: 3,
       img: "/insta.svg",
+      href:'https://www.instagram.com/makeatcfal/'
     },
   ];

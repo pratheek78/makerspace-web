@@ -11,7 +11,7 @@ export function BlogLink() {
     <div className="py-20" id="blog">
         <h1 className="heading">
             Visit our {' '}
-            <span className='text-purple'>Blog Site!</span>
+            <span className='text-purple'>Instagram!</span>
         </h1>
 
     <CardContainer className="inter-var overflow-hidden">
@@ -20,7 +20,7 @@ export function BlogLink() {
           translateZ="50"
           className="text-xl font-bold text-neutral-600 dark:text-white"
         >  
-          The CFAL Makers Blog
+          Our Instagram
           <Meteors number={20} />
         </CardItem>
         <CardItem
@@ -28,14 +28,14 @@ export function BlogLink() {
           translateZ="60"
           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
         >
-          Visit our blog site using the button below
+          Visit our Instagram Page Using the Button below
         </CardItem>
-        <CardItem translateZ="100" className="w-full mt-4">
+        <CardItem translateZ="100" className="w-full mt-4" as={Link} href="https://www.instagram.com/makeatcfal/" target="__blank">
           <Image
             src="/grad.jpg"
             height="1000"
             width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            className="h-60 pt-1 w-full object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
           />
           
@@ -44,9 +44,9 @@ export function BlogLink() {
           <CardItem
             translateZ={20}
             as={Link}
-            href="https://makeatcfalblog.free.nf/?i=1"
+            href="https://www.instagram.com/makeatcfal/"
             target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+            className="px-4 py-2 rounded-xl text-s font-normal dark:text-white"
           >
             Click Here to Visit
           </CardItem>
