@@ -53,16 +53,15 @@ const Hero = () => {
           
 
           <p className="text-center md:tracking-wider mb-4 text-s md:text-lg lg:text-2xl pt-[10vh] text-blue-100/[0.7]">
-          CFAL Makerspace is an extracurricular club at CFAL where students can engage in hands-on projects and creative activities. With a membership of 60 students, our makerspace offers opportunities to work on projects in areas such as electronics, robotics, woodworking, and 3D printing. We provide a supportive environment for students to explore their interests, develop practical skills, and bring their ideas to life, whether for personal projects, academic pursuits, or extracurricular interests
-          </p>
+          CFAL Makerspace is a 60-member club offering hands-on projects in electronics, robotics, woodworking, and 3D printing, providing a supportive environment for students to explore interests, develop skills, and bring ideas to life.</p>
 
-          <a href="#projects">
+          {/* <a href="#projects">
             <MagicButton
               icon={<RxRulerSquare />}
               title="Our Projects"
               position="right"
             />
-          </a>
+          </a> */}
 
           <TextGenerateEffect
             words="Unlock your Inner Maker, Innovator and entrepreneur" className="text-center text-[40px] md:text-5xl lg:text-4.5xl"/>
@@ -77,3 +76,5 @@ const Hero = () => {
 }
 
 export default Hero
+
+// CFAL Makerspace is a 60-member club offering hands-on projects in electronics, robotics, woodworking, and 3D printing, providing a supportive environment for students to explore interests, develop skills, and bring ideas to life.
