@@ -1,12 +1,7 @@
-import React from 'react'
-import { Spotlight } from './ui/spotlight'
+import React from 'react';
+import { Spotlight } from './ui/spotlight';
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import MagicButton from './ui/MagicButton';
-import { RxRulerSquare } from "react-icons/rx";
-
-
-
-const Adj = ['Tinker', 'Build', 'Play']
+import Image from 'next/image';
 
 
 const Hero = () => {
@@ -35,6 +30,16 @@ const Hero = () => {
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
+      {/* Logo Image */}
+      <Image
+            src="/grad.jpg" // replace with your logo image path
+            width={200} // adjust the width as needed
+            height={200} // adjust the height as needed
+            alt="CFAL Makerspace Logo"
+            className="mb-6 z-20 object-cover" // margin to separate from the "Tinker, Build, Play" text
+          />
+
+
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">

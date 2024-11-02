@@ -5,6 +5,7 @@ import {BlogLink} from "@/components/blogLink";
 import { navItems } from "@/data";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
+import { Makersfete } from "@/components/MakersFete";
 
 export default function Home() {
   return (
@@ -13,10 +14,13 @@ export default function Home() {
         <Hero />
         {/* <FloatingNav navItems={navItems}
         /> */}
+        
         <BentoGridSecondDemo />
+        <Makersfete />
         <BlogLink />
         <Approach />
         <Footer />
+        
         
 
 

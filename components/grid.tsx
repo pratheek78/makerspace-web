@@ -5,6 +5,8 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import { RxRulerSquare } from "react-icons/rx";
 import Image from "@/node_modules/next/image";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+
 
 export function BentoGridSecondDemo() {
   return (
