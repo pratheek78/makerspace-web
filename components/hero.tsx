@@ -69,7 +69,7 @@ const Hero = () => {
           </a> */}
 
           <TextGenerateEffect
-            words="Unlock your Inner Maker, Innovator and entrepreneur" className="text-center text-[40px] md:text-5xl lg:text-4.5xl"/>
+            words="Unlock your Inner Maker, Innovator and entrepreneur" className="text-center pt-20 text-[40px] md:text-5xl lg:text-4.5xl"/>
 
         
         </div>
